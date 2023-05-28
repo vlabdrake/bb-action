@@ -1,0 +1,17 @@
+name: 'bb'
+description: 'Build blog'
+inputs:
+  source:  # id of input
+    description: 'sources directory'
+    required: true
+    default: '.'
+  destination:  # id of input
+    description: 'destination directory'
+    required: true
+    default: '_blog'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.source }}
+    - ${{ inputs.destination }}
