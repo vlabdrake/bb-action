@@ -1,3 +1,3 @@
-FROM ghcr.io/vlabdrake/bb:0.2.0
+FROM ghcr.io/vlabdrake/bb:0.3.0
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
